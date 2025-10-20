@@ -7,7 +7,7 @@ console.log("Я загадал число от 1 до 10. Попробуй уг�
 while(attem > 0){
     let UserNumber = Number(prompt('Введите число: '));
     if (UserNumber < secret_number) {
-        console.log('Осталось попыток', secret_number)
+        console.log('Осталось попыток', attem)
         console.log('Секретное число больше')
         attem = attem - 1
     } else if(UserNumber === secret_number) {
@@ -18,7 +18,7 @@ while(attem > 0){
     
     else{
         console.log('Секретное число меньше')
-        console.log('Осталось попыток', secret_number)
+        console.log('Осталось попыток', attem)
         attem = attem - 1
     }
 }
@@ -26,4 +26,5 @@ if (attem < 1){
     console.log('Вы проиграли загаданое число было  ' ,secret_number)
 }
     
+
 
